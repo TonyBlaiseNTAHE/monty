@@ -40,7 +40,7 @@ void sub(stack_t **head, unsigned int line_number)
 	free(temp);
 }
 /**
- * div - divides the second top element of
+ * divd - divides the second top element of
  * the stack by the top element of the stack.
  * @head: head pointer.
  * @line_number: line readed.
