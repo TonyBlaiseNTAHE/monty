@@ -39,7 +39,7 @@ void push(stack_t **head,  unsigned int line_number)
 	token = strtok(NULL, " \n\r\t");
 	if (token == NULL || is_number(token) == 0)
 	{
-		fprintf(stderr, "L%u: Usage: push integer\n", line_number);
+		fprintf(stderr, "L%d: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	n = atoi(token);
