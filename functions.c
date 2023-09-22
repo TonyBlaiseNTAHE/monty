@@ -33,7 +33,7 @@ void get_op(char *cmd, stack_t **head, unsigned int line_number)
 		}
 		i++;
 	}
-	fprintf(stderr, "L%d:unknow instruction %s\n", line_number, cmd);
+	fprintf(stderr, "L%d: unknown instruction %s\n", line_number, cmd);
 	exit(EXIT_FAILURE);
 }
 /**
