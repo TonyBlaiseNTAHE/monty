@@ -16,7 +16,7 @@ void get_op(char *cmd, stack_t **head, unsigned int line_number)
 		{"pop", pop},
 		{"swap", swap},
 		{"add", add},
-		{"nop", nop},
+		{"nope", nope},
 		{"add", add},
 		{"sub", sub},
 		{"divd", divd},
@@ -97,7 +97,7 @@ void swap(stack_t **head, unsigned int line_number)
  * @head: head pointer.
  * @line_number: line readed.
  */
-void nop(stack_t **head, unsigned int line_number)
+void nope(stack_t **head, unsigned int line_number)
 {
 	(void)head;
 	(void)line_number;
