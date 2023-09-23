@@ -1,2 +1,2 @@
 push 98
-add
+sub
