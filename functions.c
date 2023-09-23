@@ -93,7 +93,7 @@ void swap(stack_t **head, unsigned int line_number)
 	temp->n = data;
 }
 /**
- * nop - doesn't do anything.
+ * nope - doesn't do anything.
  * @head: head pointer.
  * @line_number: line readed.
  */
