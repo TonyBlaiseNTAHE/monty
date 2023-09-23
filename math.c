@@ -49,7 +49,7 @@ void divd(stack_t **head, unsigned int line_number)
 {
 	stack_t *tmp;
 
-	if (head == NULL)
+	if (*head == NULL || (*head)->next == NULL)
 	{
 		fprintf(stderr, "L%d: can't div, stack too short\n", line_number);
 		exit(EXIT_FAILURE);
