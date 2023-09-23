@@ -1,3 +1,2 @@
 push 12
-push 4
-dvi
+pushe 4
