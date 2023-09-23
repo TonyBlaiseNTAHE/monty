@@ -1,4 +1,3 @@
-push 402
 push 98
-mod Holberton
+pchar Holberton
 pall

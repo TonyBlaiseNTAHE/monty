@@ -90,3 +90,32 @@ void pint(stack_t **head, unsigned int line_number)
 	}
 	printf("%d\n", temp->n);
 }
+/**
+ * pchar - prints the char at the top of the stack
+ * followed by a new line.
+ * @head: head pointer.
+ * @line_number: line number readed.
+ */
+void pchar(stack_t **head, unsigned int line_number)
+{
+	int i = 0; 
+
+	if (*head == NULL)
+	{
+		fprintf(stderr, "L%d: can't pchar, stack empty\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+	if (!((*head)->n >= 0 && (*head)->n <= 127))
+	{
+		fprintf(stderr, "L%d: can't pchar, value out of range\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+	while (i <= 127)
+	{
+		if ((*head)->n == i)
+		{
+			printf("%c\n", (*head)->n);
+		}
+		i++;
+	}
+}

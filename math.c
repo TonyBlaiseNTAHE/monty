@@ -56,15 +56,12 @@ void divd(stack_t **head, unsigned int line_number)
 	}
 	tmp = *head;
 	*(head) = (*head)->next;
-	if (tmp->n != 0)
-	{
-		(*head)->n /= tmp->n;
-	}
-	else
+	if (tmp->n == 0)
 	{
 		fprintf(stderr, "division by zero\n");
 		exit(EXIT_FAILURE);
 	}
+	(*head)->n /= tmp->n;
 	free(tmp);
 }
 /**
