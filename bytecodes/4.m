@@ -1,3 +1,3 @@
-push 1
-push 2
-addd
+push 12
+push 0
+div
