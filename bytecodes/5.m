@@ -1,2 +1,3 @@
 push 12
-pushe 4
+push 0
+mod

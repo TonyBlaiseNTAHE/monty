@@ -21,6 +21,7 @@ void get_op(char *cmd, stack_t **head, unsigned int line_number)
 		{"sub", sub},
 		{"div", divd},
 		{"mul", mul},
+		{"mod", mod},
 		{NULL, NULL}
 	};
 	int i = 0;
