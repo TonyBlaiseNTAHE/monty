@@ -19,7 +19,7 @@ void get_op(char *cmd, stack_t **head, unsigned int line_number)
 		{"nop", nop},
 		{"add", add},
 		{"sub", sub},
-		{"divd", divd},
+		{"div", divd},
 		{NULL, NULL}
 	};
 	int i = 0;
