@@ -20,10 +20,13 @@ void get_op(char *cmd, stack_t **head, unsigned int line_number)
 		{"add", add},
 		{"sub", sub},
 		{"div", divd},
+		{"mul", mul},
 		{NULL, NULL}
 	};
 	int i = 0;
 
+	if (*cmd == '#')
+		return;
 	while (opcodes[i].opcode)
 	{
 		if (strcmp(opcodes[i].opcode, cmd) == 0)

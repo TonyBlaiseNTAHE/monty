@@ -58,7 +58,7 @@ void divd(stack_t **head, unsigned int line_number)
 	*(head) = (*head)->next;
 	if (tmp->n != 0)
 	{
-		tmp->next->n /= tmp->n;
+		(*head)->n /= tmp->n;
 	}
 	else
 	{
@@ -66,4 +66,24 @@ void divd(stack_t **head, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	free(tmp);
+}
+/**
+ * mul - multiplies the second top element of the stack with
+ * the top element of the stack.
+ * @head: head pointer.
+ * @line_number: line readed.
+ */
+void mul(stack_t **head, unsigned int line_number)
+{
+	stack_t *temp;
+
+	if (*head == NULL || (*head)->next == NULL)
+	{
+		fprintf(stderr, "L%d: can't mul, stack to short\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+	temp = *head;
+	*head = (*head)->next;
+	(*head)->n *= temp->n;
+	free(temp);
 }
