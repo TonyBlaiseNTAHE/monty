@@ -8,18 +8,19 @@
  */
 void pstr(stack_t **head, unsigned int line_number)
 {
-	stack_t *tmp = *head;
+	stack_t *tmp;
 	(void)line_number;
 
 	if (*head == NULL || (*head)->next == NULL)
 	{
 		printf("\n");
 	}
+	tmp = *head;
 	while (tmp != NULL)
 	{
-		if (!(tmp->n >= 0 && tmp->n <= 127))
-			break;
 		if (tmp->n == 0)
+			break;
+		if (!(tmp->n >= 0 && tmp->n <= 127))
 			break;
 		if (tmp->n > 0 && tmp->n < 127)
 		{
