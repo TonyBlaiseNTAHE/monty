@@ -1,2 +1,2 @@
 push 97
-pchare
+pstrr

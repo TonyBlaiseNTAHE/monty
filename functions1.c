@@ -98,7 +98,7 @@ void pint(stack_t **head, unsigned int line_number)
  */
 void pchar(stack_t **head, unsigned int line_number)
 {
-	int i = 0; 
+	int i = 0;
 
 	if (*head == NULL)
 	{

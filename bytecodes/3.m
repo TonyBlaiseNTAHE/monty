@@ -1,3 +1,3 @@
 push 98
-pchar Holberton
+pstr Holberton
 pall
